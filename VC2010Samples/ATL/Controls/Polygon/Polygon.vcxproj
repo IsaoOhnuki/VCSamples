@@ -335,7 +335,6 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DeviceResources.cpp" />
     <ClCompile Include="PolyCtl.cpp">
       <AssemblerListingLocation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</AssemblerListingLocation>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
@@ -467,14 +466,11 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
     </Midl>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DeviceResources.h" />
-    <ClInclude Include="DirectXHelper.h" />
     <ClInclude Include="PolyCtl.h" />
     <ClInclude Include="PolygonCP.h" />
     <ClInclude Include="PolyProp.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StdAfx.h" />
-    <ClInclude Include="StepTimer.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Polygon.rc">
